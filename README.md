@@ -2,7 +2,7 @@
 Weather application to show weather details of the searched location.
 
 # Ingredients
-React, SemanticUI
+HTML, CSS, Javascript, SemanticUI
 
 # How to run ?
 1. Go to your favorite shell and cd into the directory.

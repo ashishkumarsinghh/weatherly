@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title Weatherly. Minimalistic Weather App.
+        link(rel="stylesheet", href="/css/semantic.min.css")
+        link(rel="stylesheet", href="/css/index.css")
+        link(href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet")
+
+    body
+        div.ui.grid
+            div.twelve.wide.centered.column
+                div#logo Weatherly
+                
+                div#searchbar
+                    div.ui.action.input
+                        input#searchcity(placeholder="Enter a location...", type = "text" name="city")
+                        button(onClick="search()").ui.secondary.button Search
+                
+                div.results
+                    div#temperature 46&deg C
+                    div#city New Delhi, India
+                    div#description 
+                        span#condition Hot as hell.
+
+        script(type="text/javascript", src="/js/weather.js")
+
+

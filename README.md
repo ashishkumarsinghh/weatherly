@@ -10,3 +10,6 @@ HTML, CSS, Javascript, SemanticUI
 3. Run command "npm start".
 4. Open your browser and enter "localhost:3000/".
 5. Let me know in case of any issues.
+
+# How does it look ?
+![alt text](https://github.com/ashishkumarsinghh/weatherly/blob/master/public/screen.png)

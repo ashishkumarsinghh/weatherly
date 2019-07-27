@@ -2,26 +2,33 @@ doctype html
 html
     head
         title Weatherly. Minimalistic Weather App.
-        link(rel="stylesheet", href="/css/semantic.min.css")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
         link(rel="stylesheet", href="/css/index.css")
-        link(href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet")
 
-    body
-        div.ui.grid
-            div.twelve.wide.centered.column
-                div#logo Weatherly
-                
-                div#searchbar
-                    div.ui.action.input
-                        input#searchcity(placeholder="Enter a location...", type = "text" name="city")
-                        button(onClick="search()").ui.secondary.button Search
-                
-                div.results
-                    div#temperature 46&deg C
-                    div#city New Delhi, India
-                    div#description 
-                        span#condition Hot as hell.
+    body.container
+        div.row.logo 
+            div.col.align-self-center Weatherly
+        div.row.justify-content-center.search
+            div.col-sm-6
+                .input-group.mb-3
+                    input.form-control#searchcity(type="text", placeholder="Enter your City/Location.")
+                    .input-group-append
+                        button.btn.btn-dark(type="button", id="button-addon2", onClick='search()') Search
+        div.row.justify-content-center
+            div.col-sm-6.result
+                div#temperature.res 47&deg; C
+                div#city.res New Delhi, India
+                div.res
+                    img#wimg.res(src="")
+                div#feelslike.res Feels Like 53&deg; C
+                div#condition.res Hot as Hell
+                div#humidity.res Humidity is 78%
+                div#winds.res Winds blowing at 97kmph
 
-        script(type="text/javascript", src="/js/weather.js")
+
+
+    
+        script(type="text/javascript", src="../js/weather.js")
 
 

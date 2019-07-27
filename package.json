@@ -7,9 +7,9 @@
     "author": "ashishkumarsinghh <ashishkumarsinghh@outlook.com>",
     "license": "MIT",
     "dependencies": {
-        "express": "^4.16.3",
-        "nodemon": "^1.17.5",
-        "pug": "^2.0.3"
+        "express": "^4.17.1",
+        "nodemon": "^1.19.1",
+        "pug": "^2.0.4"
     },
     "scripts": {
         "start": "nodemon --watch src/ --watch public -e js,pug,sass"

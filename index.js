@@ -13,5 +13,5 @@ app.listen(process.env.PORT || 3000, function (err) {
     if (err) {
         console.log("Whoops ! Error.")
     }
-    console.log("Yayy...Weatherly is running at http://localhost:3000/")
+    console.log(`Yayy...Weatherly is running at ${process.env.PORT}`)
 })

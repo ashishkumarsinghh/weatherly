@@ -16,17 +16,19 @@ html
                     .input-group-append
                         button.btn.btn-dark(type="button", id="button-addon2", onClick='search()') Search
         div.row.justify-content-center
-            div.col-sm-6.align-self-center
-                div.card()
-                    div.card-header#city NEW DELHI, INDIA
-                    img.card-img(src="https://source.unsplash.com/random/200x200", alt="")
-                    div.card-img-overlay
-                        h3 Feels like 53 &deg; C.     
-                        h3 Hot as Hell.
-                        h3 Winds blowing at 90 Kmph.
-                        h3 Humidity is 90%.      
-
-
+            div.col-xs-4.col-sm-4.col-lg-4.result
+                div#city.res New Delhi, India
+                div.res 
+                    h1#temperature 47&deg; C
+            div.col-xs-4.col-sm-4.col-lg-4.result
+                div.res
+                    img#wimg.res(src="")
+                div#condition.res
+                    h3 Hot as Hell
+            div.col-xs-4.col-sm-4.col-lg-4.result
+                div#feelslike.res Feels Like 53&deg; C
+                div#humidity.res Humidity is 78%
+                div#winds.res Winds blowing at 97kmph
 
 
 

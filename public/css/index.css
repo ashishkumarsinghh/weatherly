@@ -1,36 +1,53 @@
-body{
-    font-family: 'Comfortaa', cursive;
-    background: #D9D9D9;
+body {
+	font-family: 'Comfortaa', cursive;
+	background: #f2f2f2;
 }
 
-.logo{
-    text-align: center;
-    font-weight:bolder;
-    font-size: 10vh;
-    padding-top: 5vh;
-    color: #262626;
+.logo {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 10vh;
+	padding-top: 5vh;
+	color: #262626;
 }
 
-.search{
-    margin-top: 5vh;
+.search {
+	margin-top: 5vh;
 }
 
-.res{
-    text-align: center;
-    padding: 1vh 2vh;
+.res {
+	text-align: center;
+	padding: 1vh 2vh;
 }
-#temperature{
-    font-size: 8vh;
-    font-weight: bolder;
+
+#city {
+	text-transform: uppercase;
 }
-#city{
-    color: #D9D9D9;
+
+.result {
+	background: #262626;
+	color: white;
+	margin-top: 5vh;
+	border-radius: 1vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 }
-.result{
-    background: #262626;
-    color: white;
-    margin-top: 5vh;
-    border-radius: 1vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+
+#wimg {
+	border-radius: 50%;
+	border: solid rgba(123, 123, 123, 0.9) 0.4vh;
+}
+.res > h1 {
+	font-size: 12vh;
+	font-weight: bolder;
+	background: -webkit-linear-gradient(#eee, #333);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#condition {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2vh;
 }

@@ -12,6 +12,8 @@
         "pug": "^2.0.4"
     },
     "scripts": {
-        "build": "nodemon --watch src/ --watch public -e js,pug,sass"
+        "build": "nodemon --watch src/ --watch public -e js,pug,sass",
+        "start": "nodemon --watch src/ --watch public -e js,pug,sass"
+
     }
 }

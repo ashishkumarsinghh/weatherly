@@ -1,15 +1,19 @@
-# weatherly
-Weather application to show weather details of the searched location.
+# Create-React-App Example
 
-# Ingredients
-HTML, CSS, Javascript, SemanticUI
+This directory is a brief example of a [React](https://reactjs.org/) app that can be deployed to ZEIT Now with zero configuration.
 
-# How to run ?
-1. Go to your favorite shell and cd into the directory.
-2. Run command "npm install". I hope you have npm installed.
-3. Run command "npm start".
-4. Open your browser and enter "localhost:3000/".
-5. Let me know in case of any issues.
+## How we created this example
 
-# How does it look ?
-![alt text](https://github.com/ashishkumarsinghh/weatherly/blob/master/public/screen.png)
+To get started with React on Now, you can use the [Create-React-App CLI](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to initialize the project:
+
+```shell
+$ npx create-react-app my-app
+```
+
+## Deploying this Example
+
+Once initialized, you can deploy the React example with just a single command:
+
+```shell
+$ now
+```

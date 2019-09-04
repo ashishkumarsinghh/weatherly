@@ -1,0 +1,69 @@
+body {
+	color: white;
+}
+
+.searchbar {
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+.box {
+	padding: 5vh 4vh;
+	text-align: center;
+	justify-content: center;
+	border-radius: 2vh;
+}
+
+.girl {
+	background-color: #e03997;
+}
+.boy {
+	background-color: #2185d0;
+}
+.myheader {
+	text-align: center;
+	justify-content: center;
+	background-color: #0d0d0d;
+	padding: 2vh 2vh;
+}
+.footer {
+	text-align: center;
+	justify-content: center;
+	background-color: #0d0d0d;
+	padding: 2vh 2vh;
+	margin-top: 2vh;
+	width: 100%;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.cent {
+	text-align: center;
+	justify-content: center;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	margin-top: 10vh;
+	margin-left: 2vh;
+	margin-right: 2vh;
+	box-sizing: border-box;
+}
+#temperature {
+	font-size: 10vh;
+	font-weight: bolder;
+}
+#city {
+	text-transform: uppercase;
+	font-size: 4vh;
+	font-weight: bold;
+}
+
+#feelslike,
+#condition,
+#clouds,
+#humidity {
+	font-weight: bold;
+	font-size: 4vh;
+	text-transform: uppercase;
+}

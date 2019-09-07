@@ -4,13 +4,16 @@ import WeatherDetails from './WeatherDetails';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+
 export default class App extends Component {
 	constructor(props) {
 		super(props);
 		this.search = this.search.bind(this);
 		this.requestData = this.requestData.bind(this);
 		this.state = { loading: true };
-		this.url = 'https://api.apixu.com/v1/current.json?key=b470f80b1fd44287bd2195524180707&q=';
+		this.timeurl = 'https://api.timezonedb.com/v2.1/get-time-zone?key=UHY7BH9MT0T0&format=json&by=position&';
+		this.url =
+			'https://api.openweathermap.org/data/2.5/weather?id=524901&units=metric&APPID=ca3981b91baaea052be695b3759571b2&q=';
 	}
 	requestData = async (place, g) => {
 		const response = await fetch(this.url + place);
@@ -56,14 +59,27 @@ export default class App extends Component {
 					{!this.state.loading && (
 						<div className="cent">
 							<Searchbar id="girl" name="girlsearch" search={this.search} />
-							<WeatherDetails values={this.state.girl && { ...this.state.girl }} datafor="girl" />
+							<WeatherDetails
+								tu={this.timeurl}
+								values={this.state.girl && { ...this.state.girl }}
+								datafor="girl"
+							/>
 						</div>
 					)}
+					{/* <div className="cent">
+						<div className="girltime"></div>
+						<div className="boytime"></div>
+					</div> */}
+
 					{!this.state.loading && (
 						<div className="cent">
 							<Searchbar id="boy" name="boysearch" search={this.search} />
 
-							<WeatherDetails values={this.state.boy && { ...this.state.boy }} datafor="boy" />
+							<WeatherDetails
+								tu={this.timeurl}
+								values={this.state.boy && { ...this.state.boy }}
+								datafor="boy"
+							/>
 						</div>
 					)}
 				</div>

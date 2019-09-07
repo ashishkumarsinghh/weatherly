@@ -1,0 +1,15 @@
+{
+	"coord": { "lon": 105.85, "lat": 21.03 },
+	"weather": [{ "id": 801, "main": "Clouds", "description": "few clouds", "icon": "02d" }],
+	"base": "stations",
+	"main": { "temp": 34, "pressure": 1001, "humidity": 59, "temp_min": 34, "temp_max": 34 },
+	"visibility": 10000,
+	"wind": { "speed": 5.7, "deg": 140 },
+	"clouds": { "all": 20 },
+	"dt": 1567852745,
+	"sys": { "type": 1, "id": 9308, "message": 0.0063, "country": "VN", "sunrise": 1567809707, "sunset": 1567854501 },
+	"timezone": 25200,
+	"id": 1581130,
+	"name": "Hanoi",
+	"cod": 200
+}

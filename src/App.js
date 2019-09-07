@@ -55,33 +55,31 @@ export default class App extends Component {
 		return (
 			<div className="main">
 				<Header />
-				<div className="container">
-					{!this.state.loading && (
-						<div className="cent">
-							<Searchbar id="girl" name="girlsearch" search={this.search} />
-							<WeatherDetails
-								tu={this.timeurl}
-								values={this.state.girl && { ...this.state.girl }}
-								datafor="girl"
-							/>
-						</div>
-					)}
-					{/* <div className="cent">
-						<div className="girltime"></div>
-						<div className="boytime"></div>
-					</div> */}
+				<div className="ui grid container">
+					<div className="ui stackable two column centered grid">
+						{!this.state.loading && (
+							<div className=" column cent">
+								<Searchbar id="girl" name="girlsearch" search={this.search} />
+								<WeatherDetails
+									tu={this.timeurl}
+									values={this.state.girl && { ...this.state.girl }}
+									datafor="girl"
+								/>
+							</div>
+						)}
 
-					{!this.state.loading && (
-						<div className="cent">
-							<Searchbar id="boy" name="boysearch" search={this.search} />
+						{!this.state.loading && (
+							<div className=" column cent">
+								<Searchbar id="boy" name="boysearch" search={this.search} />
 
-							<WeatherDetails
-								tu={this.timeurl}
-								values={this.state.boy && { ...this.state.boy }}
-								datafor="boy"
-							/>
-						</div>
-					)}
+								<WeatherDetails
+									tu={this.timeurl}
+									values={this.state.boy && { ...this.state.boy }}
+									datafor="boy"
+								/>
+							</div>
+						)}
+					</div>
 				</div>
 
 				<Footer />
